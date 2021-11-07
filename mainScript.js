@@ -174,7 +174,7 @@ function chooseOption(fromTag, panelDiv, optNames) {
   const URL = "http://localhost:80//connectWithBack";
   const xhr = new XMLHttpRequest();
 
-  fromTag.addEventListener("keyup", function () {
+  fromTag.addEventListener("keydown", function () {
     const input = fromTag.value;
     panelDiv.innerHTML = "";
 
@@ -197,7 +197,7 @@ function chooseOption(fromTag, panelDiv, optNames) {
           .then((text) => {
             let platesRes = parseAndFixText(platesToChoose(text));
 
-            choosePlate.addEventListener("keyup", function () {
+            choosePlate.addEventListener("keydown", function () {
               let input = choosePlate.value;
               secondPanel.innerHTML = "";
 
