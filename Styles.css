@@ -1,0 +1,239 @@
+body {
+  width: auto;
+  background-color: rgb(237, 245, 228);
+}
+
+#banner {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  left: 10%;
+  top: 10px;
+  border-radius: 5px;
+  background-color: #001f3f;
+}
+
+img {
+  position: relative;
+  top: 12.5px;
+  width: 115px;
+  height: 115px;
+}
+
+h1 {
+  font-family: "Georama", sans-serif;
+  font-size: 3.5em;
+  color: white;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 6.5%;
+  width: 80%;
+  left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: #001f3f;
+}
+
+.app,
+.instructions {
+  top: 10%;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+#sign,
+form {
+  width: 300px;
+  min-height: 275px;
+  border-radius: 5px;
+  background-color: #0074d9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#sign ul {
+  padding: 0px;
+}
+
+#sign ul li {
+  color: white;
+}
+
+#sign ul li p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.food {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #00587a;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #7fdbff;
+}
+
+.suggest {
+  position: relative;
+  background-color: #7fdbff;
+  z-index: 9;
+}
+
+.container {
+  position: absolute;
+  margin-top: 10px;
+}
+
+#testIn {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 35%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #00587a;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #7fdbff;
+  z-index: 1;
+}
+
+.suggestMe {
+  position: absolute;
+  margin-top: 51%;
+  background-color: #7fdbff;
+  width: 192px;
+  z-index: 9999;
+}
+
+.suggest div:hover,
+.suggestMe div:hover {
+  color: rgb(112, 93, 122);
+  cursor: pointer;
+}
+
+.amount {
+  visibility: hidden;
+  position: absolute;
+  top: 145px;
+  width: 182px;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #00587a;
+  padding: 6px;
+  background-color: #7fdbff;
+  border-radius: 4px;
+}
+
+#send {
+  position: absolute;
+  top: 200px;
+  min-width: 80px;
+  padding: 3px;
+  background-color: #001f3f;
+  border: 1px solid #00587a;
+  border-radius: 5px;
+  color: white;
+}
+
+#results {
+  position: absolute;
+  top: 200px;
+  left: 60%;
+  padding: 3px;
+  min-width: 80px;
+  background-color: #001f3f;
+  border: 1px solid #00587a;
+  border-radius: 5px;
+  color: white;
+}
+
+#send:hover,
+#results:hover {
+  background-color: #39cccc;
+  color: #001f3f;
+  cursor: pointer;
+}
+
+#tata {
+  visibility: hidden;
+  position: relative;
+  width: 90%;
+  background-color: #0074d9;
+  border-color: blue;
+  border-radius: 4px;
+}
+
+#tata thead tr {
+  background-color: #001f3f;
+}
+
+#tata thead tr th,
+#tata tbody tr td {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#showResults {
+  background-color: #001f3f;
+  position: relative;
+  height: 70vh;
+  width: 80%;
+  left: 10%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 875px) {
+  #banner {
+    width: 80%;
+    left: 10%;
+  }
+
+  img {
+    top: 22px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .app {
+    flex-grow: 1;
+  }
+
+  .instructions {
+    margin-top: 10px;
+    flex-grow: 1;
+  }
+
+  #sign,
+  form {
+    flex-grow: 1;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  img {
+    top: 13px;
+    width: 55px;
+    height: 55px;
+  }
+}
