@@ -199,11 +199,11 @@ function chooseOption(fromTag, panelDiv, optNames) {
             let platesRes = parseAndFixText(platesToChoose(text));
 
             choosePlate.addEventListener("keydown", function () {
-              let input = choosePlate.value.toLowerCase();
+              let input = choosePlate.value;
               secondPanel.innerHTML = "";
 
               let plates = getTheNames(platesRes).filter(function (cathe) {
-                return cathe.name.toLowerCase().startsWith(input.toLowerCase());
+                return cathe.name.toLowerCase().startsWith(input);
               });
 
               plates.forEach(function (opt) {
