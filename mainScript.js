@@ -206,7 +206,15 @@ function chooseOption(fromTag, panelDiv, optNames) {
               secondPanel.innerHTML = "";
 
               let plates = getTheNames(platesRes).filter(function (cathe) {
-                return cathe.name.toLowerCase().startsWith(input.toLowerCase());
+                if (
+                  cathe.name.toLowerCase().startsWith(input.toLowerCase()) ==
+                  true
+                ) {
+                  return cathe.name
+                    .toLowerCase()
+                    .startsWith(input.toLowerCase());
+                }
+                //return cathe.name.toLowerCase().startsWith(input.toLowerCase());
               });
 
               plates.forEach(function (opt) {
