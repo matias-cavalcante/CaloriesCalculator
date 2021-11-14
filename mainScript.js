@@ -202,19 +202,11 @@ function chooseOption(fromTag, panelDiv, optNames) {
             let platesRes = parseAndFixText(platesToChoose(text));
 
             choosePlate.addEventListener("keydown", function () {
-              let input = choosePlate.value;
+              let input = choosePlate.value.toLowerCase();
               secondPanel.innerHTML = "";
 
               let plates = getTheNames(platesRes).filter(function (cathe) {
-                if (
-                  cathe.name.toLowerCase().startsWith(input.toLowerCase()) ==
-                  true
-                ) {
-                  return cathe.name
-                    .toLowerCase()
-                    .startsWith(input.toLowerCase());
-                }
-                //return cathe.name.toLowerCase().startsWith(input.toLowerCase());
+                return cathe.name.toLowerCase().startsWith(input.toLowerCase());
               });
 
               plates.forEach(function (opt) {
