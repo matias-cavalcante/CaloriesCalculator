@@ -174,7 +174,8 @@ function chooseOption(fromTag, panelDiv, optNames) {
   //const xhr = new XMLHttpRequest();
 
   fromTag.addEventListener("keydown", function () {
-    const input = fromTag.value;
+    const input = fromTag.value.toLowerCase();
+    console.log("input ", input);
     panelDiv.innerHTML = "";
 
     const options = cathegoriesPredictions(optNames, input);
