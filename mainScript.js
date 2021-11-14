@@ -144,7 +144,7 @@ function calcCaloriesPerPlate(amount, plateInfo) {
 function cathegoriesPredictions(names, inputSource) {
   let resultNames = [];
   names.filter(function (cathe) {
-    if (cathe.name.toLowerCase().startsWith(inputSource) == true) {
+    if (cathe.name.toLowerCase().startsWith(inputSource.toLowerCase) == true) {
       resultNames.push(cathe.name);
     }
   });
@@ -175,7 +175,6 @@ function chooseOption(fromTag, panelDiv, optNames) {
 
   fromTag.addEventListener("keydown", function () {
     const input = fromTag.value.toLowerCase();
-    console.log("input ", input);
     panelDiv.innerHTML = "";
 
     const options = cathegoriesPredictions(optNames, input);
