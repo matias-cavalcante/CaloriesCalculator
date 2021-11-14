@@ -177,7 +177,7 @@ function chooseOption(fromTag, panelDiv, optNames) {
 
   fromTag.addEventListener("keydown", function () {
     const input = fromTag.value;
-    console.log("Input is ", input);
+    console.log("Input  ", input);
     panelDiv.innerHTML = "";
 
     const options = cathegoriesPredictions(optNames, input);
