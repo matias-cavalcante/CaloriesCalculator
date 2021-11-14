@@ -171,7 +171,6 @@ function sendPostRequest(senderObject, urlAdress, message) {
 
 function chooseOption(fromTag, panelDiv, optNames) {
   //const URL = "http://localhost:80//connectWithBack";
-  const URL = "https://beerapi.herokuapp.com/?Beer";
   //const xhr = new XMLHttpRequest();
 
   fromTag.addEventListener("keydown", function () {
@@ -184,11 +183,13 @@ function chooseOption(fromTag, panelDiv, optNames) {
       panelDiv.appendChild(div);
       div.onclick = function () {
         fromTag.value = opt;
+        console.log("Value is ", fromTag.value);
         panelDiv.innerHTML = "";
 
         choosePlate.style.visibility = "visible";
         sendNameAPI = JSON.stringify({ name: fromTag.value });
 
+        URL = "https://beerapi.herokuapp.com/?" + fromTag.value;
         //sendPostRequest(xhr, URL, sendNameAPI);
         fetch(URL)
           .then((res) => {

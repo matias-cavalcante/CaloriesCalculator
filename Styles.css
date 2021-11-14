@@ -84,6 +84,10 @@ form {
   background-color: #7fdbff;
 }
 
+.food {
+  text-transform: lowercase;
+}
+
 .suggest {
   position: relative;
   background-color: #7fdbff;
