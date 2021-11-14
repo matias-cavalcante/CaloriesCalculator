@@ -192,7 +192,7 @@ function chooseOption(fromTag, panelDiv, optNames) {
         choosePlate.style.visibility = "visible";
         sendNameAPI = JSON.stringify({ name: fromTag.value });
 
-        URL = "https://beerapi.herokuapp.com/?" + fromTag.value;
+        URL = encodeURI("https://beerapi.herokuapp.com/?" + fromTag.value);
         //sendPostRequest(xhr, URL, sendNameAPI);
         fetch(URL)
           .then((res) => {
