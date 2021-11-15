@@ -171,6 +171,19 @@ function sendPostRequest(senderObject, urlAdress, message) {
   senderObject.send(message);
 }
 
+function tagValueReplaceSpace(tag) {
+  let newTag;
+  if (tag.includes(" ") == true) {
+    newTag = tag.replaceAll(" ", "");
+    if (newTag.includes("&") == true) {
+      return newTag.replaceAll("&", "");
+    }
+    return newTag;
+  } else {
+    return tag;
+  }
+}
+
 function chooseOption(fromTag, panelDiv, optNames) {
   //const URL = "http://localhost:80//connectWithBack";
   //const xhr = new XMLHttpRequest();
@@ -186,14 +199,13 @@ function chooseOption(fromTag, panelDiv, optNames) {
       panelDiv.appendChild(div);
       div.onclick = function () {
         fromTag.value = opt;
-        console.log("Value is ", fromTag.value);
         panelDiv.innerHTML = "";
 
         choosePlate.style.visibility = "visible";
         sendNameAPI = JSON.stringify({ name: fromTag.value });
 
-        URL = encodeURI("https://beerapi.herokuapp.com/?" + fromTag.value);
-        //sendPostRequest(xhr, URL, sendNameAPI);
+        const fileName = tagValueReplaceSpace(fromTag.value);
+        URL = encodeURI("https://beerapi.herokuapp.com/?" + fileName);
         fetch(URL)
           .then((res) => {
             return res.text();
