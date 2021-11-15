@@ -120,6 +120,8 @@ form {
   background-color: #7fdbff;
   width: 192px;
   z-index: 9999;
+  max-height: 100px;
+  overflow-y: auto;
 }
 
 .suggest div:hover,
