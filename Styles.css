@@ -124,7 +124,7 @@ form {
 .suggest {
   position: relative;
   top: 57px;
-  width: 220px;
+  width: 90%;
   left: 5%;
   background-color: #b983ff;
   border-bottom-left-radius: 2px;
@@ -364,11 +364,11 @@ h4 {
   .amount {
     width: 0px;
     min-width: 150px;
-    margin-left: 5%;
+    margin-left: -3%;
   }
 
   #testIn {
-    margin-top: 63%;
+    margin-top: 83%;
   }
 
   form {
@@ -382,10 +382,20 @@ h4 {
   }
 
   #send {
-    left: 20px;
+    left: 0px;
   }
 
   #results {
-    left: 55%;
+    left: 52%;
+  }
+
+  .suggest {
+    width: 90%;
+    left: 10%;
+  }
+  .suggestMe {
+    width: 90%;
+    margin-top: 85.5%;
+    left: 10%;
   }
 }
