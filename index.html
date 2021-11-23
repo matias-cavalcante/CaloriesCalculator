@@ -9,68 +9,68 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Georama:ital@1&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Scada:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Scada:wght@700&display=swap" rel="stylesheet">
+        
+        
         <title>Calorix (calories calculator)</title>
     </head>
 
     <header>
         <div id = "banner">
-            <h1>CALORATOR</h1>
-            <img src ="logo-modified.png">
+            <h1>Calorator</h1>
+            <h3>Keep track of the calories!</h3>
         </div>
     </header>
 
     <body>
-        <section>
+        <section id = "main">
             
-            <div class = "app">
-
-                <div id = "sign">
-                    <ul>
-                        <li><p>Select a food cathegory</p></li>
-                        <li><p>Select an option</p></li>
-                        <li><p>Enter the selected options</p></li>
-                        <li><p>Continue or see your results</p></li>
-                    </ul>
-                </div>
-            </div>
             <div class = "instructions">
                 <form action="" id = "format">
                     <div class = "container">
-                        <input id = "testIn" type = "text" placeholder="Select option" autocapitalize="off"/>
+                        <h4 id = "Opt">Type for an option</h4>
+                        <input id = "testIn" type = "text" placeholder="Search option in category " autocapitalize="off"/>
                         <div class = "suggestMe">
                         </div>
-
-                        <input class = "food" type = text placeholder="Select cathegory" autocapitalize="off"/>
+                        <h4 id = "Cat">Search a food category</h4>
+                        <input class = "food" type = text placeholder="Pasta, Pizza, Juyce, etc." autocapitalize="off"/>
                         <div class = "suggest">
                         </div>
-
-                        <input class = "amount" type = number placeholder="Select amount" />
+                        <h4 id = "Amnt">Select amount</h4>
+                        <input class = "amount" type = number placeholder="Select amount of portions" />
                         <button id = "send" type ="reset">Send</button>
 
                         <button id = "results" type ="button">Results</button>
                     </div>
                 </form>
             </div>
+
             
+
+            <div id = "sign">
+                <img src = "undraw_cookie_love_ulvn.png" id = "girl">
+            </div>
+
+            <section id = "showResults">
+                <table id = "tata">
+                    <thead>
+                        <tr>
+                            <th scope="col">name</th>
+                            <th scope="col">portion</th>
+                            <th scope="col">calories</th>
+                            <th scope="col">amount</th>
+                            <th scope="col">total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+                
         </section>
 
-        <section id = "showResults">
-            <table id = "tata">
-                <thead>
-                    <tr>
-                        <th scope="col">name</th>
-                        <th scope="col">portion</th>
-                        <th scope="col">calories</th>
-                        <th scope="col">amount</th>
-                        <th scope="col">total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </section>
+        
     </body>
 <script type="text/javascript" src="mainScript.js"></script>
 </html>

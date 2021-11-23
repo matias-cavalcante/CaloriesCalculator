@@ -1,63 +1,91 @@
 body {
   width: auto;
-  background-color: rgb(237, 245, 228);
+  background-color: white;
 }
 
 #banner {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
-  width: 80%;
-  left: 10%;
-  top: 10px;
-  border-radius: 5px;
-  background-color: #001f3f;
-}
-
-img {
-  position: relative;
-  top: 12.5px;
-  width: 115px;
-  height: 115px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  width: 90%;
+  height: auto;
+  left: 5%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  z-index: 9;
+  justify-content: start;
 }
 
 h1 {
-  font-family: "Georama", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 3.5em;
-  color: white;
+  color: #753188;
+  bottom: 15px;
+  position: relative;
+  left: 10.1%;
+
+  margin: 10px;
+}
+h3 {
+  font-family: "Manrope", sans-serif;
+  color: #753188;
+  position: absolute;
+  top: 55%;
+  left: 11.2%;
 }
 
 section {
   position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 6.5%;
-  width: 80%;
-  left: 10%;
+  width: 90%;
+  max-height: 345px;
+  left: 5%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 5px;
-  background-color: #001f3f;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
 }
 
-.app,
 .instructions {
   top: 10%;
   width: 350px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+  margin-left: 9%;
 }
 
-#sign,
+#sign {
+  float: right;
+  margin-right: 5%;
+  width: 400px;
+  max-height: 350px;
+}
+
+img {
+  max-width: 100%;
+  z-index: 1000;
+}
+
+#girl {
+  position: relative;
+  max-width: 150%;
+  max-height: 480px;
+  right: 40%;
+  bottom: 130px;
+}
+
 form {
+  position: relative;
   width: 300px;
+  height: 350px;
   min-height: 275px;
   border-radius: 5px;
-  background-color: #0074d9;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  right: 5%;
+  justify-content: start;
+  padding-left: 5px;
 }
 
 #sign ul {
@@ -75,13 +103,16 @@ form {
 
 .food {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: none;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  border-bottom-color: #00587a;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #753188;
   padding: 6px;
-  border-radius: 4px;
-  background-color: #7fdbff;
+  position: relative;
+  top: 55px;
+  border-radius: 9px;
+  width: 230px;
+  height: 20px;
+  background-color: white;
 }
 
 .food {
@@ -90,35 +121,67 @@ form {
 
 .suggest {
   position: relative;
-  background-color: #7fdbff;
+  top: 57px;
+  width: 220px;
+  left: 5%;
+  background-color: #b983ff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   z-index: 9;
 }
 
 .container {
+  padding-left: 3%;
   position: absolute;
   margin-top: 10px;
 }
 
-#testIn {
-  visibility: hidden;
+h4 {
+  font-family: "Manrope", sans-serif;
+  font-weight: bolder;
+  color: #753188;
+}
+
+#Cat {
   position: absolute;
-  margin-top: 35%;
+  top: 5px;
+  left: 5%;
+}
+
+#Opt {
+  position: absolute;
+  top: 92px;
+  left: 5%;
+}
+
+#Amnt {
+  position: absolute;
+  top: 172px;
+  left: 5%;
+}
+
+#testIn {
+  visibility: visible;
+  position: absolute;
+  margin-top: 55%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: none;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  border-bottom-color: #00587a;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #753188;
   padding: 6px;
-  border-radius: 4px;
-  background-color: #7fdbff;
+  border-radius: 9px;
+  background-color: white;
+  width: 230px;
+  height: 20px;
   z-index: 1;
 }
 
 .suggestMe {
   position: absolute;
-  margin-top: 51%;
-  background-color: #7fdbff;
-  width: 192px;
+  margin-top: 70%;
+  left: 8%;
+  background-color: #b983ff;
+  width: 220px;
   z-index: 9999;
   max-height: 101px;
   overflow-y: auto;
@@ -126,30 +189,31 @@ form {
 
 .suggest div:hover,
 .suggestMe div:hover {
-  color: rgb(112, 93, 122);
+  color: white;
   cursor: pointer;
 }
 
 .amount {
-  visibility: hidden;
+  visibility: visible;
   position: absolute;
-  top: 145px;
+  top: 222px;
   width: 182px;
-  border: none;
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
-  border-bottom-color: #00587a;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #753188;
   padding: 6px;
-  background-color: #7fdbff;
-  border-radius: 4px;
+  border-radius: 9px;
+  height: 20px;
+  background-color: white;
 }
 
 #send {
   position: absolute;
-  top: 200px;
+  top: 285px;
   min-width: 80px;
+  height: 35px;
   padding: 3px;
-  background-color: #001f3f;
+  background-color: #753188;
   border: 1px solid #00587a;
   border-radius: 5px;
   color: white;
@@ -157,11 +221,12 @@ form {
 
 #results {
   position: absolute;
-  top: 200px;
-  left: 60%;
+  top: 285px;
+  left: 68%;
   padding: 3px;
   min-width: 80px;
-  background-color: #001f3f;
+  height: 35px;
+  background-color: #753188;
   border: 1px solid #00587a;
   border-radius: 5px;
   color: white;
@@ -178,8 +243,9 @@ form {
   visibility: hidden;
   position: relative;
   width: 90%;
-  background-color: #0074d9;
+  background-color: #753188;
   border-color: blue;
+  opacity: 0.85;
   border-radius: 4px;
 }
 
@@ -194,52 +260,130 @@ form {
 }
 
 #showResults {
-  background-color: #001f3f;
-  position: relative;
-  height: 70vh;
-  width: 80%;
-  left: 10%;
-  margin-bottom: 30px;
+  background-color: transparent;
+  position: absolute;
+  min-height: 70%;
+  width: 50%;
+  top: 0%;
+  left: 47.5%;
   display: flex;
   justify-content: center;
+  z-index: 9999;
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 1069px) {
+  #girl {
+    max-width: 140%;
+    right: 25%;
+    bottom: 25px;
+  }
+
+  #sign {
+    margin-right: 7%;
+    width: 300px;
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 876px) {
   #banner {
     width: 80%;
     left: 10%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #753188;
+    border: 2px solid #753188;
   }
 
-  img {
-    top: 22px;
-    width: 100px;
-    height: 100px;
+  h1 {
+    left: 0%;
+    color: white;
   }
 
-  .app {
-    flex-grow: 1;
+  h3 {
+    position: unset;
+    left: 0%;
+    margin: 0;
+    color: white;
+  }
+
+  #main {
+    width: 80%;
+    left: 10%;
+    border: 2px solid #753188;
   }
 
   .instructions {
-    margin-top: 10px;
-    flex-grow: 1;
+    width: 83%;
   }
 
-  #sign,
   form {
-    flex-grow: 1;
-    width: auto;
+    right: 0%;
+    justify-content: center;
+  }
+
+  #girl {
+    max-width: 135%;
+    right: 25%;
+    bottom: 120px;
+  }
+
+  #sign {
+    display: none;
+  }
+
+  #showResults {
+    position: absolute;
+    min-height: 70%;
+    width: 90%;
+    top: 120%;
+    left: 5%;
   }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 415px) {
   h1 {
-    font-size: 2em;
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1em;
   }
 
   img {
     top: 13px;
     width: 55px;
     height: 55px;
+  }
+
+  .food,
+  #testIn,
+  .amount {
+    width: 0px;
+    min-width: 150px;
+    margin-left: 5%;
+  }
+
+  #testIn {
+    margin-top: 63%;
+  }
+
+  form {
+    right: 0%;
+  }
+
+  #Cat,
+  #Opt,
+  #Amnt {
+    left: 9%;
+  }
+
+  #send {
+    left: 20px;
+  }
+
+  #results {
+    left: 55%;
   }
 }
