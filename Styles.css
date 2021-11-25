@@ -345,6 +345,9 @@ h4 {
 }
 
 @media screen and (max-width: 415px) {
+  body {
+    background-color: #753188;
+  }
   h1 {
     font-size: 3em;
   }
