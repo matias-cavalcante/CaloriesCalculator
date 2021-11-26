@@ -345,24 +345,28 @@ h4 {
 
 @media screen and (max-width: 415px) {
   body {
-    background-color: #544179;
+    background-color: #1f1d36;
     padding: 4px;
   }
 
   #banner {
-    left: 0%;
-    background-color: #7267cb;
-    width: 100%;
+    left: 2.5%;
+    background-color: #544179;
+    width: 95%;
     border-color: #544179;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
   }
 
   #main {
     max-height: none;
     height: 450px;
-    left: 0%;
-    width: 100%;
-    background-color: #98bae7;
+    left: 2.5%;
+    width: 95%;
+    background-color: #96c7c1;
     border-color: #544179;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 
   h1 {
