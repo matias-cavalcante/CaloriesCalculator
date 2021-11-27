@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #ebeae8;
 }
 
 /*Modified*/
@@ -17,6 +17,7 @@ body {
   border-top-right-radius: 5px;
   z-index: 9;
   justify-content: start;
+  background-color: white;
 }
 
 h1 {
@@ -166,6 +167,7 @@ h4 {
   position: absolute;
   margin-top: 55%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
   border-width: 1.5px;
   border-style: solid;
   border-color: #753188;
@@ -235,8 +237,8 @@ h4 {
 
 #send:hover,
 #results:hover {
-  background-color: #39cccc;
-  color: #001f3f;
+  background-color: #7267cb;
+  color: white;
   cursor: pointer;
 }
 
@@ -294,7 +296,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     background-color: #753188;
-    border: 2px solid #753188;
+    /*border: 2px solid #753188;*/
   }
 
   h1 {
@@ -312,7 +314,7 @@ h4 {
   #main {
     width: 80%;
     left: 10%;
-    border: 2px solid #753188;
+    /*border: 2px solid #753188*/
   }
 
   .instructions {
@@ -345,15 +347,15 @@ h4 {
 
 @media screen and (max-width: 415px) {
   body {
-    background-color: #1f1d36;
+    background-color: #ebeae8;
     padding: 4px;
   }
 
   #banner {
     left: 2.5%;
-    background-color: #544179;
+    background-color: #753188;
     width: 95%;
-    border-color: #544179;
+    border-color: #4d194d;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
   }
@@ -363,14 +365,14 @@ h4 {
     height: 450px;
     left: 2.5%;
     width: 95%;
-    background-color: #96c7c1;
+    background-color: white;
     border-color: #544179;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
   }
 
   h1 {
-    font-size: 3.7em;
+    font-size: 3.5em;
     color: white;
   }
 
@@ -389,12 +391,12 @@ h4 {
   #testIn,
   .amount {
     width: 0px;
-    min-width: 150px;
+    min-width: 200px;
     margin-left: -3%;
   }
 
   #testIn {
-    margin-top: 83%;
+    margin-top: 63%;
   }
 
   form {
@@ -410,26 +412,26 @@ h4 {
 
   #send {
     width: 180px;
-    left: -2px;
+    left: 18px;
     font-size: 20px;
-    background-color: #544179;
+    background-color: #753188;
   }
 
   #results {
     font-size: 20px;
     top: 350px;
     width: 180px;
-    left: -2px;
-    background-color: #544179;
+    left: 18px;
+    background-color: #753188;
   }
 
   .suggest {
-    width: 90%;
-    left: 2px;
+    width: 96%;
+    left: -2px;
   }
   .suggestMe {
-    width: 90%;
-    margin-top: 179px;
+    width: 92%;
+    margin-top: 177px;
     left: 7px;
   }
 
