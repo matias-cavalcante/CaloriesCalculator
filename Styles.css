@@ -1,5 +1,5 @@
 body {
-  background-color: #ebeae8;
+  background-color: #daf5bc;
 }
 
 /*Modified*/
@@ -47,6 +47,7 @@ section {
   padding-bottom: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  background-color: white;
 }
 
 .instructions {
@@ -75,6 +76,7 @@ img {
   max-height: 480px;
   right: 40%;
   bottom: 130px;
+  z-index: 9;
 }
 
 form {
@@ -294,13 +296,14 @@ h4 {
   display: flex;
   justify-content: center;
   z-index: 9999;
+  background-color: transparent;
 }
 
 #reloadPage {
   position: absolute;
   background-color: blue;
   top: 86%;
-  left: 20%;
+  left: 25%;
   visibility: hidden;
   z-index: 999999999;
   padding: 4px;
@@ -392,7 +395,7 @@ h4 {
 
 @media screen and (max-width: 415px) {
   body {
-    background-color: #ebeae8;
+    background-color: #daf5bc;
     padding: 4px;
   }
 
@@ -451,7 +454,7 @@ h4 {
   #Cat,
   #Opt,
   #Amnt {
-    left: 2%;
+    left: 3%;
   }
 
   #send {
@@ -471,12 +474,12 @@ h4 {
 
   .suggest {
     width: 96%;
-    left: -2px;
+    left: 5px;
   }
   .suggestMe {
     width: 92%;
     margin-top: 177px;
-    left: 7px;
+    left: 13px;
   }
 
   #tata {
