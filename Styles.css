@@ -1,5 +1,5 @@
 body {
-  background-color: #daf5bc;
+  background-color: #e5f7a3;
 }
 
 /*Modified*/
@@ -395,7 +395,7 @@ h4 {
 
 @media screen and (max-width: 415px) {
   body {
-    background-color: #daf5bc;
+    background-color: #e5f7a3;
     padding: 4px;
   }
 
