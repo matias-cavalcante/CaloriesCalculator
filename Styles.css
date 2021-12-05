@@ -41,13 +41,12 @@ h3 {
 section {
   position: relative;
   width: 90%;
-  max-height: 345px;
+  max-height: 360px;
   left: 5%;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: white;
 }
 
 .instructions {
@@ -199,7 +198,8 @@ h4 {
   visibility: visible;
   position: absolute;
   top: 222px;
-  width: 182px;
+  width: 82px;
+  margin-left: 0%;
   border-width: 1.5px;
   border-style: solid;
   border-color: #753188;
@@ -207,6 +207,24 @@ h4 {
   border-radius: 9px;
   height: 20px;
   background-color: white;
+}
+
+#cityname {
+  visibility: visible;
+  position: absolute;
+  top: 222px;
+  width: 100px;
+  margin-left: 0%;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: #753188;
+  border-radius: 9px;
+  height: 35px;
+  background-color: white;
+}
+
+#placeHold {
+  color: red;
 }
 
 #send {
@@ -244,7 +262,8 @@ h4 {
 #tata {
   visibility: hidden;
   position: relative;
-  width: 90%;
+  width: 100%;
+  height: 300px;
   background-color: #753188;
   border-color: blue;
   opacity: 0.85;
@@ -262,15 +281,42 @@ h4 {
 }
 
 #showResults {
-  background-color: transparent;
+  /*background-color: transparent;*/
+  padding-top: 0px;
+  padding-bottom: 0px;
   position: absolute;
+  overflow-y: auto;
   min-height: 70%;
+  max-height: 300px;
   width: 50%;
-  top: 0%;
+  top: 5%;
   left: 47.5%;
   display: flex;
   justify-content: center;
   z-index: 9999;
+}
+
+#reloadPage {
+  position: absolute;
+  background-color: blue;
+  top: 86%;
+  left: 20%;
+  visibility: hidden;
+  z-index: 999999999;
+  padding: 4px;
+  min-width: 80px;
+  height: 38px;
+  background-color: #753188;
+  border: 1px solid #00587a;
+  border-radius: 5px;
+  font-size: 1em;
+  color: white;
+}
+
+#reloadPage:hover {
+  background-color: #7267cb;
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1069px) {
@@ -391,7 +437,6 @@ h4 {
   .amount {
     width: 0px;
     min-width: 200px;
-    margin-left: -3%;
   }
 
   #testIn {

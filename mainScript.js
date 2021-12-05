@@ -9,6 +9,11 @@ const tableBody = document
   .getElementById("tata")
   .getElementsByTagName("tbody")[0];
 const backBox = document.getElementById("sign");
+const rechargePage = document.getElementById("reloadPage");
+
+rechargePage.addEventListener("click", function () {
+  window.location.reload();
+});
 
 const cathegories = [
   { name: "Alcoholic Drinks & Beverages" },
@@ -136,8 +141,14 @@ function createArrayPlatesChoosen(arrayInfoOfPlate, amountOfPortions) {
   return finalArray;
 }
 
+function getAveragePortionInfo(portfionInfo) {
+  let amountWanted = portfionInfo.portion.split(" ")[2].slice(1);
+  return amountWanted;
+}
+
 function calcCaloriesPerPlate(amount, plateInfo) {
   let calPerPlate = amount * parseInt(plateInfo.calories.split(" ")[0]);
+  console.log(getAveragePortionInfo(plateInfo));
   return calPerPlate;
 }
 
@@ -290,10 +301,13 @@ function chooseOption(fromTag, panelDiv, optNames) {
     cell3.innerHTML = "";
     cell4.innerHTML = "";
     cell5.innerHTML = wholeCalories;
+    document.getElementById("results").style.visibility = "hidden";
+    document.getElementById("send").style.visibility = "hidden";
     document.getElementById("tata").style.visibility = "visible";
     document
       .getElementById("showResults")
       .scrollIntoView({ block: "end", behavior: "smooth" });
+    rechargePage.style.visibility = "visible";
   });
 }
 
