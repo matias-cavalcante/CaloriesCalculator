@@ -1,47 +1,41 @@
 body {
-  background-color: #e5f7a3;
+  background-color: #f6f7dc;
 }
-
-/*Modified*/
 
 #banner {
   position: relative;
   display: flex;
+  justify-content: start;
+  width: 90%;
+  left: 5%;
   padding-top: 20px;
   padding-bottom: 5px;
-  padding-left: 0px;
-  width: 90%;
-  height: auto;
-  left: 5%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  z-index: 9;
-  justify-content: start;
   background-color: white;
 }
 
 h1 {
+  position: relative;
+  bottom: 15px;
+  left: 10.1%;
+  margin: 10px;
+  color: #753188;
   font-family: "Manrope", sans-serif;
   font-size: 3.5em;
-  color: #753188;
-  bottom: 15px;
-  position: relative;
-  left: 10.1%;
-
-  margin: 10px;
 }
+
 h3 {
-  font-family: "Manrope", sans-serif;
-  color: #753188;
   position: absolute;
   top: 55%;
   left: 11.2%;
+  color: #753188;
+  font-family: "Manrope", sans-serif;
 }
 
 section {
   position: relative;
   width: 90%;
-  max-height: 360px;
   left: 5%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -62,8 +56,9 @@ section {
   float: right;
   margin-right: 5%;
   width: 400px;
-  max-height: 350px;
 }
+
+/*I leave it here for now*/
 
 img {
   max-width: 100%;
@@ -395,7 +390,7 @@ h4 {
 
 @media screen and (max-width: 415px) {
   body {
-    background-color: #e5f7a3;
+    background-color: #f6f7dc;
     padding: 4px;
   }
 
