@@ -58,16 +58,8 @@ section {
   width: 400px;
 }
 
-/*I leave it here for now*/
-
-img {
-  max-width: 100%;
-  z-index: 1000;
-}
-
 #girl {
   position: relative;
-  max-width: 150%;
   max-height: 480px;
   right: 40%;
   bottom: 130px;
@@ -78,43 +70,22 @@ form {
   position: relative;
   width: 300px;
   height: 350px;
-  min-height: 275px;
   border-radius: 5px;
   display: flex;
-  right: 5%;
   justify-content: start;
+  right: 5%;
   padding-left: 5px;
 }
 
-#sign ul {
-  padding: 0px;
-}
-
-#sign ul li {
-  color: white;
-}
-
-#sign ul li p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-}
-
 .food {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: #753188;
-  padding: 6px;
   position: relative;
   top: 55px;
-  border-radius: 9px;
   width: 230px;
   height: 20px;
-  background-color: white;
-}
-
-.food {
-  text-transform: lowercase;
+  padding: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1.5px solid #753188;
+  border-radius: 9px;
 }
 
 .suggest {
@@ -122,9 +93,10 @@ form {
   top: 57px;
   width: 90%;
   left: 5%;
+  padding-left: 2px;
   background-color: #b983ff;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   z-index: 9;
 }
 
@@ -134,55 +106,48 @@ form {
   margin-top: 10px;
 }
 
-h4 {
+#Cat,
+#Opt,
+#Amnt {
+  position: absolute;
+  left: 5%;
   font-family: "Manrope", sans-serif;
   font-weight: bolder;
   color: #753188;
 }
 
 #Cat {
-  position: absolute;
   top: 5px;
-  left: 5%;
 }
 
 #Opt {
-  position: absolute;
   top: 92px;
-  left: 5%;
 }
 
 #Amnt {
-  position: absolute;
   top: 172px;
-  left: 5%;
 }
 
 #testIn {
-  visibility: visible;
   position: absolute;
   margin-top: 55%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: #753188;
-  padding: 6px;
-  border-radius: 9px;
-  background-color: white;
   width: 230px;
   height: 20px;
-  z-index: 1;
+  padding: 6px;
+  border: 1.5px solid #753188;
+  border-radius: 9px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .suggestMe {
   position: absolute;
   margin-top: 70%;
+  width: 220px;
+  max-height: 100px;
   left: 8%;
   background-color: #b983ff;
-  width: 220px;
   z-index: 9999;
-  max-height: 101px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .suggest div:hover,
@@ -192,36 +157,14 @@ h4 {
 }
 
 .amount {
-  visibility: visible;
   position: absolute;
   top: 222px;
   width: 82px;
-  margin-left: 0%;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: #753188;
-  padding: 6px;
-  border-radius: 9px;
   height: 20px;
-  background-color: white;
-}
-
-#cityname {
-  visibility: visible;
-  position: absolute;
-  top: 222px;
-  width: 100px;
+  padding: 6px;
   margin-left: 0%;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: #753188;
+  border: 1.5px solid #753188;
   border-radius: 9px;
-  height: 35px;
-  background-color: white;
-}
-
-#placeHold {
-  color: red;
 }
 
 #send {
@@ -278,9 +221,6 @@ h4 {
 }
 
 #showResults {
-  /*background-color: transparent;*/
-  padding-top: 0px;
-  padding-bottom: 0px;
   position: absolute;
   overflow-y: auto;
   min-height: 70%;
@@ -288,32 +228,34 @@ h4 {
   width: 50%;
   top: 5%;
   left: 47.5%;
+  padding-top: 0px;
+  padding-bottom: 0px;
   display: flex;
   justify-content: center;
   z-index: 9999;
   background-color: transparent;
 }
 
+/*we leave here now*/
+
 #reloadPage {
   position: absolute;
-  background-color: blue;
   top: 86%;
   left: 25%;
+  height: 38px;
   visibility: hidden;
-  z-index: 999999999;
   padding: 4px;
   min-width: 80px;
-  height: 38px;
   background-color: #753188;
   border: 1px solid #00587a;
   border-radius: 5px;
   font-size: 1em;
   color: white;
+  z-index: 999999999;
 }
 
 #reloadPage:hover {
   background-color: #7267cb;
-  color: white;
   cursor: pointer;
 }
 
@@ -339,7 +281,6 @@ h4 {
     flex-direction: column;
     align-items: center;
     background-color: #753188;
-    /*border: 2px solid #753188;*/
   }
 
   h1 {
@@ -357,7 +298,6 @@ h4 {
   #main {
     width: 80%;
     left: 10%;
-    /*border: 2px solid #753188*/
   }
 
   .instructions {
@@ -391,7 +331,7 @@ h4 {
 @media screen and (max-width: 415px) {
   body {
     background-color: #f6f7dc;
-    padding: 4px;
+    padding: 3.5px;
   }
 
   #banner {
@@ -409,25 +349,16 @@ h4 {
     left: 2.5%;
     width: 95%;
     background-color: white;
-    border-color: #544179;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
   }
 
   h1 {
     font-size: 3.5em;
-    color: white;
   }
 
   h3 {
     font-size: 1.25em;
-    color: white;
-  }
-
-  img {
-    top: 13px;
-    width: 55px;
-    height: 55px;
   }
 
   .food,
